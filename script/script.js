@@ -15,7 +15,7 @@ function verificar() {
     img.setAttribute("id", "foto");
 
     if (fSexo[0].checked) {
-      genero = "Homem";
+      genero = "Masculino";
 
       if (idade >= 0 && idade <= 12) {
         // Crianca
@@ -31,7 +31,7 @@ function verificar() {
         img.setAttribute("src", "./images/foto-idoso-m.png");
       }
     } else if (fSexo[1].checked) {
-      genero = "Mulher";
+      genero = "Feminino";
 
       if (idade >= 0 && idade <= 12) {
         // Crianca
@@ -47,7 +47,7 @@ function verificar() {
         img.setAttribute("src", "./images/foto-idoso-f.png");
       }
     }
-    resultado.innerHTML = `Detectamos o genero ${genero} com ${idade} anos.`;
+    resultado.innerHTML = `Detectamos o genero ${genero} de ${idade} anos de idade.`;
     resultado.appendChild(img)
   }
 }
